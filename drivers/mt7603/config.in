@@ -48,7 +48,7 @@ endif
 config MT7603E_MULTI_INF_SUPPORT
         bool
         #default y if !FIRST_IF_NONE && !SECOND_IF_NONE
-        default y
+        default n
 
 #config MT7603E_WIFI_BASIC_FUNC
 #    bool "Basic Functions"
@@ -422,13 +422,13 @@ config MT7603E_APCLI_SUPPORT
 config MT7603E_MULTI_APCLI_SUPPORT
 	bool "MULTI AP-Client Support"
 	depends on MT7603E_APCLI_SUPPORT
-	
+    dafault y
 config MT7603E_MAC_REPEATER_SUPPORT
     bool "MAC Repeater Support"
     depends on MT7603E_RLT_AP_SUPPORT
     depends on MT7603E_APCLI_SUPPORT
     depends on RALINK_RT6352 || RALINK_MT7620 || MT7603E_RALINK_MT7603E
-    default n
+    default y
 config MT7603E_AIRPLAY_SUPPORT
 	bool "AirPlay Support"
 	depends on MT7603E_APCLI_SUPPORT
@@ -486,7 +486,7 @@ config MT7603E_PREVENT_ARP_SPOOFING_SUPPORT
 config MT7603E_MULTI_CORE_SUPPORT 
     bool "multi core support"
     depends on TARGET_ramips_mt7621
-    default y
+    default n
 
     endif
 
