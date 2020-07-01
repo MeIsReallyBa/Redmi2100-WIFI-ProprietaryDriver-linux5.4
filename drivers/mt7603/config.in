@@ -48,7 +48,7 @@ endif
 config MT7603E_MULTI_INF_SUPPORT
         bool
         #default y if !FIRST_IF_NONE && !SECOND_IF_NONE
-        default n
+        default y
 
 #config MT7603E_WIFI_BASIC_FUNC
 #    bool "Basic Functions"
