@@ -422,7 +422,7 @@ config MT7603E_APCLI_SUPPORT
 config MT7603E_MULTI_APCLI_SUPPORT
 	bool "MULTI AP-Client Support"
 	depends on MT7603E_APCLI_SUPPORT
-    dafault y
+    default y
 config MT7603E_MAC_REPEATER_SUPPORT
     bool "MAC Repeater Support"
     depends on MT7603E_RLT_AP_SUPPORT
